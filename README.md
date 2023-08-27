@@ -29,6 +29,11 @@
 - Postman
 - Git
 
+## Deploy
+
+- Front-end no Vercel.com
+- Back-end no Railway.app
+
 ## Instruções
 
 ```bash
