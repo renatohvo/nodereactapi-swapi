@@ -12,13 +12,13 @@
 
 .form-control-container {
     margin-bottom: 16px;
-    max-width: 1000px;
+    max-width: 500px;
 }
 
 .form-control {
     margin-right: 4px;
     margin-bottom: 3px;
-    width: 60%;
+    width: 250px;
     height: 46px;
     background-color: #1b2531;
     border: 1px solid #384459;
