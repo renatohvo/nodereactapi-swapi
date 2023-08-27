@@ -1,0 +1,29 @@
+.desfavorite-btn {
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    content: "\274C";
+}
+
+.favorite-btn::before {
+    font-size: 30px;
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #d9e900;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #d9e900;
+    content: "\1F60D";
+    /* content: "\2714"; */
+}
+
