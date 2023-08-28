@@ -5,15 +5,10 @@ const repository = mysql.createPool(process.env.CONNECTION_STRING);
 // POPULATE DATABASE
 async function insertAll(arrNames) {
     const resCreate = await repository.query('CREATE TABLE IF NOT EXISTS people (id int(11) NOT NULL AUTO_INCREMENT, name varchar(150) NOT NULL, favorite tinyint(1) NOT NULL, PRIMARY KEY (id))');
-    if(resCreate[0].warningStatus == 0){
-        arrNames.forEach(element => {
-            const resInsert = repository.query(`INSERT INTO people (id,name,favorite) VALUES (0, '${element}', 0)`);
-        });
-        return "Banco de Dados baixado com sucesso!";
-    }
-    else{
-        return "Banco de Dados já foi baixado anteriormente!";
-    }
+    arrNames.forEach(element => {
+        const resInsert = repository.query(`INSERT INTO people (id,name,favorite) VALUES (0, '${element}', 0)`);
+    });
+    return "Banco de Dados baixado com sucesso!";
 }
 
 // FIND ALL
