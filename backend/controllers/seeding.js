@@ -10,7 +10,7 @@ async function getSeeding(req, res) {
         let swapiArray = [];
         for (let i = 1; i <= 9; i++) {
             const retornoswapi = await swapi.get(`/people/?page=${i}`);
-            swapiArray.push(JSON.parse(JSON.stringify(retornoswapi.data.results)));;
+            swapiArray.push(JSON.parse(JSON.stringify(retornoswapi.data.results)));
         }
         const arrNames = [];
         for (const newArray of swapiArray) {
